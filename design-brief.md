@@ -3,11 +3,11 @@
 
 ### Palette
 ```
---color-bg:      #f5f0e8   warm cream — paper-like, organic
---color-surface: #ede6d6   slightly deeper warm ivory for cards/sections
---color-primary: #1c1410   deep warm brown — not cold black
---color-accent:  #b85c38   terracotta — earthy, distinctive, warm urgency
---color-text:    #2e261e   dark warm brown body text
+--color-bg:      #f6f2e9   warm cream — paper-like, organic
+--color-surface: #ede9de   warm linen for cards/sections
+--color-primary: #1b1f18   near-black with subtle green undertone
+--color-accent:  #7c9e79   muted sage green — spring meadow, fresh not loud
+--color-text:    #2d3129   dark warm olive-brown body text
 ```
 
 ### Typography

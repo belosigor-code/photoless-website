@@ -1,14 +1,14 @@
 :root {
-  /* Palette — TBD in Phase 4 */
-  --color-bg:      #0a0a0a;
-  --color-surface: #161616;
-  --color-primary: #ffffff;
-  --color-accent:  #c8a96e;
-  --color-text:    #e0e0e0;
+  /* Palette — Warme Textur */
+  --color-bg:      #f5f0e8;
+  --color-surface: #ede6d6;
+  --color-primary: #1c1410;
+  --color-accent:  #b85c38;
+  --color-text:    #2e261e;
 
-  /* Typography — TBD in Phase 4 */
-  --font-heading: 'Playfair Display', serif;
-  --font-body:    'Inter', sans-serif;
+  /* Typography */
+  --font-heading: 'Lora', serif;
+  --font-body:    'Source Sans 3', sans-serif;
 
   /* Spacing scale */
   --space-xs:  0.5rem;
@@ -21,4 +21,7 @@
   --max-width:     1200px;
   --border-radius: 4px;
   --transition:    all 0.3s ease;
+
+  /* Header */
+  --header-height: 72px;
 }

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photoless — Design Directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Lato:wght@300;400;700&family=Raleway:wght@300;400;700;900&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{padding-top:50px}
+img{max-width:100%;display:block}
+
+/* PREVIEW NAV */
+.pnav{position:fixed;top:0;left:0;right:0;z-index:999;display:flex;background:#0a0a0a;border-bottom:1px solid #222}
+.pnav a{flex:1;padding:14px 10px;text-align:center;color:#555;text-decoration:none;font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.08em;border-right:1px solid #222;transition:all .2s}
+.pnav a:last-child{border-right:none}
+.pnav a:hover{color:#fff;background:#161616}
+
+/* DIR LABEL */
+.dlabel{padding:10px 48px;font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#555;border-bottom:2px solid #222}
+
+/* ================================================
+   DIR 1: WEICHES LICHT — Elegant, airy, timeless
+   ================================================ */
+.d1{--bg:#FAFAF8;--sur:#F0EDE8;--pri:#1ABFCF;--drk:#3D3D3D;--txt:#4A4A4A;--mut:#9A9A92;background:var(--bg)}
+
+.d1 nav{display:flex;align-items:center;justify-content:space-between;padding:18px 60px;background:var(--bg);border-bottom:1px solid var(--sur)}
+.d1 nav img{height:30px}
+.d1 nav ul{display:flex;gap:32px;list-style:none}
+.d1 nav ul a{font-family:'Lato',sans-serif;font-size:12px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--txt);text-decoration:none}
+.d1 nav ul a.on{color:var(--pri)}
+.d1 nav .cta{font-family:'Lato',sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--pri);padding:10px 24px;text-decoration:none}
+
+.d1 .hero{display:grid;grid-template-columns:1fr 1fr;min-height:500px}
+.d1 .hero-txt{padding:80px 60px;display:flex;flex-direction:column;justify-content:center;gap:22px}
+.d1 .eyebrow{font-family:'Lato',sans-serif;font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--pri)}
+.d1 h1{font-family:'Cormorant Garamond',serif;font-size:58px;font-weight:300;line-height:1.12;color:var(--drk)}
+.d1 h1 em{font-style:italic;color:var(--pri)}
+.d1 .sub{font-family:'Lato',sans-serif;font-size:16px;font-weight:300;line-height:1.75;color:var(--mut);max-width:380px}
+.d1 .btns{display:flex;gap:20px;align-items:center}
+.d1 .btn1{font-family:'Lato',sans-serif;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--pri);padding:14px 32px;text-decoration:none}
+.d1 .btn2{font-family:'Lato',sans-serif;font-size:12px;color:var(--txt);text-decoration:none;border-bottom:1px solid var(--mut);padding-bottom:2px}
+.d1 .hero-img{background:linear-gradient(140deg,#E4DDD5 0%,#CEC5BA 60%,#B8ADA0 100%);position:relative}
+
+.d1 .svcs{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--sur)}
+.d1 .svc{padding:44px 40px;border-right:1px solid var(--sur)}
+.d1 .svc:last-child{border-right:none}
+.d1 .bar{width:32px;height:2px;background:var(--pri);margin-bottom:22px}
+.d1 .svc h3{font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:400;color:var(--drk);margin-bottom:12px}
+.d1 .svc p{font-family:'Lato',sans-serif;font-size:14px;font-weight:300;line-height:1.75;color:var(--mut)}
+
+.d1 .meta{background:var(--sur);padding:36px 60px;display:flex;gap:80px;align-items:flex-start}
+.d1 .fl{font-family:'Lato',sans-serif;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-bottom:8px}
+.d1 .fh{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:300;color:var(--drk);line-height:1.2}
+.d1 .fb{font-family:'Lato',sans-serif;font-size:14px;font-weight:300;color:var(--txt);margin-top:8px;line-height:1.65}
+
+/* ================================================
+   DIR 2: DUNKELKAMMER — Dark, bold, dramatic
+   ================================================ */
+.d2{--bg:#141417;--sur:#1E1E22;--pri:#1ABFCF;--lit:#EAEAEC;--mut:#72728A;background:var(--bg)}
+.d2 .dlabel{background:#0A0A0D;border-color:#1a1a1a}
+
+.d2 nav{display:flex;align-items:center;justify-content:space-between;padding:18px 60px;background:var(--bg);border-bottom:1px solid rgba(255,255,255,.06)}
+.d2 nav img{height:28px;filter:invert(1) brightness(.8)}
+.d2 nav ul{display:flex;gap:32px;list-style:none}
+.d2 nav ul a{font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);text-decoration:none}
+.d2 nav ul a.on{color:var(--pri)}
+.d2 nav .cta{font-family:'Raleway',sans-serif;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--bg);background:var(--pri);padding:10px 24px;text-decoration:none}
+
+.d2 .hero{min-height:500px;position:relative;display:flex;align-items:center;background:linear-gradient(110deg,#0d0d10 0%,#13131a 55%,#1a1520 100%)}
+.d2 .hero::after{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--pri)}
+.d2 .hero-txt{position:relative;z-index:1;padding:80px 64px;max-width:700px}
+.d2 .eyebrow{font-family:'Raleway',sans-serif;font-size:10px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--pri);margin-bottom:24px}
+.d2 h1{font-family:'Raleway',sans-serif;font-size:72px;font-weight:900;line-height:1;color:var(--lit);text-transform:uppercase;letter-spacing:-.02em;margin-bottom:24px}
+.d2 h1 span{color:var(--pri)}
+.d2 .sub{font-family:'Inter',sans-serif;font-size:16px;font-weight:300;line-height:1.75;color:var(--mut);margin-bottom:40px;max-width:480px}
+.d2 .btn1{font-family:'Raleway',sans-serif;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--bg);background:var(--pri);padding:16px 36px;text-decoration:none;display:inline-block}
+
+.d2 .svcs{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.06)}
+.d2 .svc{padding:44px 40px;border-right:1px solid rgba(255,255,255,.06)}
+.d2 .svc:last-child{border-right:none}
+.d2 .num{font-family:'Raleway',sans-serif;font-size:52px;font-weight:900;color:rgba(26,191,207,.1);line-height:1;margin-bottom:6px}
+.d2 .svc h3{font-family:'Raleway',sans-serif;font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--lit);margin-bottom:12px}
+.d2 .svc p{font-family:'Inter',sans-serif;font-size:14px;font-weight:300;line-height:1.75;color:var(--mut)}
+
+.d2 .meta{background:var(--sur);padding:36px 60px;display:flex;gap:80px;align-items:flex-start;border-top:1px solid rgba(255,255,255,.06)}
+.d2 .fl{font-family:'Inter',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-bottom:8px}
+.d2 .fh{font-family:'Raleway',sans-serif;font-size:34px;font-weight:900;color:var(--lit);text-transform:uppercase;letter-spacing:-.02em;line-height:1.1}
+.d2 .fb{font-family:'Inter',sans-serif;font-size:14px;font-weight:300;color:var(--mut);margin-top:8px;line-height:1.65}
+
+/* ================================================
+   DIR 3: GOLDENE STUNDE — Warm, personal, artisan
+   ================================================ */
+.d3{--bg:#F7F2E9;--sur:#EDE6D4;--pri:#B87333;--acc:#1ABFCF;--drk:#2A2318;--txt:#4A4136;--mut:#8A7F72;background:var(--bg)}
+
+.d3 nav{display:flex;align-items:center;justify-content:space-between;padding:18px 60px;background:var(--bg);border-bottom:1px solid var(--sur)}
+.d3 nav img{height:30px}
+.d3 nav ul{display:flex;gap:32px;list-style:none}
+.d3 nav ul a{font-family:'Source Sans 3',sans-serif;font-size:15px;font-weight:400;color:var(--txt);text-decoration:none}
+.d3 nav ul a.on{color:var(--pri)}
+.d3 nav .cta{font-family:'Source Sans 3',sans-serif;font-size:14px;font-weight:600;color:#fff;background:var(--pri);padding:10px 24px;text-decoration:none;border-radius:3px}
+
+.d3 .hero{display:grid;grid-template-columns:5fr 4fr;min-height:500px}
+.d3 .hero-img{background:linear-gradient(150deg,#DDD3B8 0%,#C8B898 40%,#B8A07A 100%);position:relative}
+.d3 .hero-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(42,35,24,.15),transparent)}
+.d3 .hero-txt{padding:72px 52px;display:flex;flex-direction:column;justify-content:center;gap:20px}
+.d3 .eyebrow{font-family:'Source Sans 3',sans-serif;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--acc)}
+.d3 h1{font-family:'Playfair Display',serif;font-size:52px;font-weight:700;line-height:1.15;color:var(--drk)}
+.d3 h1 em{font-style:italic;font-weight:400;color:var(--pri)}
+.d3 .sub{font-family:'Source Sans 3',sans-serif;font-size:17px;font-weight:300;line-height:1.7;color:var(--mut);max-width:380px}
+.d3 .btn1{font-family:'Source Sans 3',sans-serif;font-size:15px;font-weight:600;color:#fff;background:var(--pri);padding:14px 32px;text-decoration:none;border-radius:3px;align-self:flex-start;display:inline-block}
+
+.d3 .svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--sur)}
+.d3 .svc{padding:44px 40px;background:var(--bg)}
+.d3 .dot{width:8px;height:8px;border-radius:50%;background:var(--pri);margin-bottom:20px}
+.d3 .svc h3{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--drk);margin-bottom:12px}
+.d3 .svc p{font-family:'Source Sans 3',sans-serif;font-size:15px;font-weight:300;line-height:1.7;color:var(--mut)}
+
+.d3 .meta{background:var(--sur);padding:36px 60px;display:flex;gap:80px;align-items:flex-start}
+.d3 .fl{font-family:'Source Sans 3',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-bottom:8px}
+.d3 .fh{font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:var(--drk);line-height:1.2}
+.d3 .fb{font-family:'Source Sans 3',sans-serif;font-size:15px;font-weight:300;color:var(--txt);margin-top:8px;line-height:1.65}
+
+/* SHARED PALETTE */
+.pal{display:flex;gap:14px;align-items:flex-start;flex-shrink:0}
+.sw{text-align:center}
+.sw-c{width:48px;height:48px;border-radius:50%;margin:0 auto 7px;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.sw-h{font-family:'Inter',sans-serif;font-size:10px;color:#999;display:block;letter-spacing:.03em}
+.sw-r{font-family:'Inter',sans-serif;font-size:10px;color:#777;display:block;margin-top:2px}
+</style>
+</head>
+<body>
+
+<nav class="pnav">
+  <a href="#dir1">Direction 1 &mdash; Weiches Licht</a>
+  <a href="#dir2">Direction 2 &mdash; Dunkelkammer</a>
+  <a href="#dir3">Direction 3 &mdash; Goldene Stunde</a>
+</nav>
+
+<!-- ===== DIRECTION 1 ===== -->
+<div class="dlabel">DIRECTION 1 &mdash; &ldquo;WEICHES LICHT&rdquo; &mdash; Elegant &middot; Hell &middot; Zeitlos</div>
+<section id="dir1" class="d1">
+  <nav>
+    <img src="assets/images/logo.png" alt="Photoless">
+    <ul>
+      <li><a href="#" class="on">Home</a></li>
+      <li><a href="#">Hochzeit</a></li>
+      <li><a href="#">Fotoshooting</a></li>
+      <li><a href="#">Firmen</a></li>
+      <li><a href="#">Schulen</a></li>
+    </ul>
+    <a href="#" class="cta">Anfragen</a>
+  </nav>
+  <div class="hero">
+    <div class="hero-txt">
+      <div class="eyebrow">Fotostudio Regensdorf</div>
+      <h1>Momente,<br>die <em>bleiben.</em></h1>
+      <p class="sub">Pers&ouml;nliche Fotografie f&uuml;r Ihre sch&ouml;nsten Augenblicke &mdash; von der Hochzeit bis zum Business-Portrait.</p>
+      <div class="btns">
+        <a href="#" class="btn1">Termin anfragen</a>
+        <a href="#" class="btn2">Portfolio ansehen</a>
+      </div>
+    </div>
+    <div class="hero-img"></div>
+  </div>
+  <div class="svcs">
+    <div class="svc"><div class="bar"></div><h3>Hochzeit</h3><p>Ihr sch&ouml;nster Tag in zeitlosen Bildern &mdash; authentisch, warm und unvergesslich festgehalten.</p></div>
+    <div class="svc"><div class="bar"></div><h3>Fotoshooting</h3><p>Portraits, Paarbilder, Baby &amp; Familie und Tiere &mdash; f&uuml;r jeden Moment das richtige Bild.</p></div>
+    <div class="svc"><div class="bar"></div><h3>Firmen &amp; Schulen</h3><p>Professionelle Business-Fotos und Schulklassenbilder, die Eindruck hinterlassen.</p></div>
+  </div>
+  <div class="meta">
+    <div style="flex:1">
+      <p class="fl">Typografie &mdash; Cormorant Garamond / Lato</p>
+      <p class="fh">Momente, die bleiben</p>
+      <p class="fb">Fotografie, die ber&uuml;hrt. Jedes Bild erz&auml;hlt Ihre Geschichte.</p>
+    </div>
+    <div class="pal">
+      <div class="sw"><div class="sw-c" style="background:#FAFAF8;border:1px solid #ddd"></div><span class="sw-h">#FAFAF8</span><span class="sw-r">Background</span></div>
+      <div class="sw"><div class="sw-c" style="background:#F0EDE8;border:1px solid #ddd"></div><span class="sw-h">#F0EDE8</span><span class="sw-r">Surface</span></div>
+      <div class="sw"><div class="sw-c" style="background:#1ABFCF"></div><span class="sw-h">#1ABFCF</span><span class="sw-r">Primary</span></div>
+      <div class="sw"><div class="sw-c" style="background:#3D3D3D"></div><span class="sw-h">#3D3D3D</span><span class="sw-r">Dark</span></div>
+      <div class="sw"><div class="sw-c" style="background:#9A9A92"></div><span class="sw-h">#9A9A92</span><span class="sw-r">Muted</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DIRECTION 2 ===== -->
+<div class="dlabel" style="background:#0A0A0D;color:#444;border-color:#1a1a1a">DIRECTION 2 &mdash; &ldquo;DUNKELKAMMER&rdquo; &mdash; Dramatisch &middot; Mutig &middot; Premium</div>
+<section id="dir2" class="d2">
+  <nav>
+    <img src="assets/images/logo.png" alt="Photoless">
+    <ul>
+      <li><a href="#" class="on">Home</a></li>
+      <li><a href="#">Hochzeit</a></li>
+      <li><a href="#">Fotoshooting</a></li>
+      <li><a href="#">Firmen</a></li>
+      <li><a href="#">Schulen</a></li>
+    </ul>
+    <a href="#" class="cta">Anfragen</a>
+  </nav>
+  <div class="hero">
+    <div class="hero-txt">
+      <div class="eyebrow">Fotostudio Regensdorf &middot; Z&uuml;rich</div>
+      <h1>Bilder,<br><span>die reden.</span></h1>
+      <p class="sub">Hochzeitsfotografie, Business-Portraits und Schulbilder &mdash; professionell, pers&ouml;nlich, unvergesslich.</p>
+      <a href="#" class="btn1">Termin anfragen</a>
+    </div>
+  </div>
+  <div class="svcs">
+    <div class="svc"><div class="num">01</div><h3>Hochzeit</h3><p>Ihr bedeutsamster Tag &mdash; in Bildern, die Jahrzehnte &uuml;berdauern.</p></div>
+    <div class="svc"><div class="num">02</div><h3>Fotoshooting</h3><p>Einzelportrait bis Familienbild &mdash; authentisch und voller Leben.</p></div>
+    <div class="svc"><div class="num">03</div><h3>Firmen &amp; Schulen</h3><p>Business-Fotos mit Wirkung. Schulbilder, die Freude machen.</p></div>
+  </div>
+  <div class="meta">
+    <div style="flex:1">
+      <p class="fl">Typografie &mdash; Raleway / Inter</p>
+      <p class="fh">BILDER, DIE REDEN</p>
+      <p class="fb">Fotografie auf h&ouml;chstem Niveau &mdash; f&uuml;r Ihre wichtigsten Momente.</p>
+    </div>
+    <div class="pal">
+      <div class="sw"><div class="sw-c" style="background:#141417;border:1px solid #333"></div><span class="sw-h" style="color:#555">#141417</span><span class="sw-r" style="color:#444">Background</span></div>
+      <div class="sw"><div class="sw-c" style="background:#1E1E22;border:1px solid #333"></div><span class="sw-h" style="color:#555">#1E1E22</span><span class="sw-r" style="color:#444">Surface</span></div>
+      <div class="sw"><div class="sw-c" style="background:#1ABFCF"></div><span class="sw-h" style="color:#555">#1ABFCF</span><span class="sw-r" style="color:#444">Primary</span></div>
+      <div class="sw"><div class="sw-c" style="background:#EAEAEC"></div><span class="sw-h" style="color:#555">#EAEAEC</span><span class="sw-r" style="color:#444">Light</span></div>
+      <div class="sw"><div class="sw-c" style="background:#72728A"></div><span class="sw-h" style="color:#555">#72728A</span><span class="sw-r" style="color:#444">Muted</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DIRECTION 3 ===== -->
+<div class="dlabel">DIRECTION 3 &mdash; &ldquo;GOLDENE STUNDE&rdquo; &mdash; Warm &middot; Pers&ouml;nlich &middot; Authentisch</div>
+<section id="dir3" class="d3">
+  <nav>
+    <img src="assets/images/logo.png" alt="Photoless">
+    <ul>
+      <li><a href="#" class="on">Home</a></li>
+      <li><a href="#">Hochzeit</a></li>
+      <li><a href="#">Fotoshooting</a></li>
+      <li><a href="#">Firmen</a></li>
+      <li><a href="#">Schulen</a></li>
+    </ul>
+    <a href="#" class="cta">Anfragen</a>
+  </nav>
+  <div class="hero">
+    <div class="hero-img"></div>
+    <div class="hero-txt">
+      <div class="eyebrow">Ihr Fotostudio in Regensdorf</div>
+      <h1>Erinnerungen,<br>mit <em>Herz</em><br>gemacht.</h1>
+      <p class="sub">Von der Hochzeit bis zum Schulbild &mdash; wir fotografieren, was Ihnen wichtig ist.</p>
+      <a href="#" class="btn1">Termin vereinbaren</a>
+    </div>
+  </div>
+  <div class="svcs">
+    <div class="svc"><div class="dot"></div><h3>Hochzeit</h3><p>Zeitlose Hochzeitsfotos, die Ihre Gef&uuml;hle von diesem besonderen Tag f&uuml;r immer festhalten.</p></div>
+    <div class="svc"><div class="dot"></div><h3>Fotoshooting</h3><p>F&uuml;r alle Lebensmomente: Einzelportrait, Paarbilder, Baby &amp; Familie und Tierfotos.</p></div>
+    <div class="svc"><div class="dot"></div><h3>Firmen &amp; Schulen</h3><p>Professionelle Bilder f&uuml;r Ihr Unternehmen und unvergessliche Schulklassenfotos.</p></div>
+  </div>
+  <div class="meta">
+    <div style="flex:1">
+      <p class="fl">Typografie &mdash; Playfair Display / Source Sans 3</p>
+      <p class="fh">Erinnerungen mit Herz</p>
+      <p class="fb">Fotografie, die auf Augenh&ouml;he begegnet &mdash; warm, echt und voller Leben.</p>
+    </div>
+    <div class="pal">
+      <div class="sw"><div class="sw-c" style="background:#F7F2E9;border:1px solid #ddd"></div><span class="sw-h">#F7F2E9</span><span class="sw-r">Background</span></div>
+      <div class="sw"><div class="sw-c" style="background:#EDE6D4;border:1px solid #ddd"></div><span class="sw-h">#EDE6D4</span><span class="sw-r">Surface</span></div>
+      <div class="sw"><div class="sw-c" style="background:#B87333"></div><span class="sw-h">#B87333</span><span class="sw-r">Primary</span></div>
+      <div class="sw"><div class="sw-c" style="background:#1ABFCF"></div><span class="sw-h">#1ABFCF</span><span class="sw-r">Accent</span></div>
+      <div class="sw"><div class="sw-c" style="background:#2A2318"></div><span class="sw-h">#2A2318</span><span class="sw-r">Dark</span></div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

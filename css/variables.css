@@ -1,0 +1,27 @@
+:root {
+  /* Palette – Direction 1: Weiches Licht */
+  --color-bg:      #FAFAF8;
+  --color-surface: #F0EDE8;
+  --color-primary: #3D3D3D;   /* Charcoal – CTAs, headings */
+  --color-accent:  #1ABFCF;   /* Cyan – logo echo, thin bars, hover */
+  --color-text:    #4A4A4A;
+  --color-muted:   #9A9A92;
+  --color-border:  #E6E2DC;
+
+  /* Typography */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Lato', system-ui, sans-serif;
+
+  /* Spacing */
+  --sp-xs: 0.5rem;
+  --sp-sm: 1rem;
+  --sp-md: 2rem;
+  --sp-lg: 4rem;
+  --sp-xl: 8rem;
+
+  /* Layout */
+  --max-w:     1200px;
+  --radius:    3px;
+  --transition: all 0.28s ease;
+  --nav-h:     72px;
+}

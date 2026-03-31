@@ -1,0 +1,24 @@
+:root {
+  /* Palette — TBD in Phase 4 */
+  --color-bg:      #0a0a0a;
+  --color-surface: #161616;
+  --color-primary: #ffffff;
+  --color-accent:  #c8a96e;
+  --color-text:    #e0e0e0;
+
+  /* Typography — TBD in Phase 4 */
+  --font-heading: 'Playfair Display', serif;
+  --font-body:    'Inter', sans-serif;
+
+  /* Spacing scale */
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  2rem;
+  --space-lg:  4rem;
+  --space-xl:  8rem;
+
+  /* Layout */
+  --max-width:     1200px;
+  --border-radius: 4px;
+  --transition:    all 0.3s ease;
+}

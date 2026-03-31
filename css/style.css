@@ -426,6 +426,7 @@ main { padding-top: var(--nav-h); }
 }
 
 /* ── MOBILE ── */
+.nav__mobile { display: none; } /* hidden on desktop — shown via media query below */
 @media (max-width: 1024px) {
   .nav { padding: 0 24px; }
   .nav__links { display: none; }

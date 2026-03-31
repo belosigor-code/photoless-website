@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/style.css">
@@ -41,42 +41,71 @@
     </div>
   </section>
 
-  <section class="types" aria-label="Shooting-Arten">
-    <div class="types__inner">
-      <div class="types__grid">
-        <article class="type-card fade-in">
-          <div class="type-card__image"></div>
-          <div class="type-card__text">
-            <h2 class="type-card__heading">Einzelshooting</h2>
-            <p class="type-card__body">F&#252;r Bewerbungsbilder, Profilfotos oder einfach ein sch&#246;nes Portrait &#8212; professionell und entspannt.</p>
-            <a href="kontakt.html" class="type-card__link" id="type-einzeln">Anfragen</a>
-          </div>
-        </article>
-        <article class="type-card fade-in">
-          <div class="type-card__image"></div>
-          <div class="type-card__text">
-            <h2 class="type-card__heading">Paarbilder</h2>
-            <p class="type-card__body">Ob Verlobung, Jubil&#228;um oder einfach so &#8212; Bilder, die Ihre Verbindung von ihrer sch&#246;nsten Seite zeigen.</p>
-            <a href="kontakt.html" class="type-card__link" id="type-paar">Anfragen</a>
-          </div>
-        </article>
-        <article class="type-card fade-in">
-          <div class="type-card__image"></div>
-          <div class="type-card__text">
-            <h2 class="type-card__heading">Baby &amp; Familie</h2>
-            <p class="type-card__body">Kleine Momente, grosse Gef&#252;hle. Neugeborene, Kleinkinder und Familienportraits in nat&#252;rlicher Umgebung.</p>
-            <a href="kontakt.html" class="type-card__link" id="type-familie">Anfragen</a>
-          </div>
-        </article>
-        <article class="type-card fade-in">
-          <div class="type-card__image"></div>
-          <div class="type-card__text">
-            <h2 class="type-card__heading">Tiere</h2>
-            <p class="type-card__body">Ihre vierbeinigen Freunde verdienen tolle Bilder &#8212; mit Geduld und Liebe zum Tier entstehen sch&#246;ne Erinnerungen.</p>
-            <a href="kontakt.html" class="type-card__link" id="type-tiere">Anfragen</a>
-          </div>
-        </article>
+  <section class="type-sections" aria-label="Shooting-Kategorien">
+    <div class="type-sections__inner">
+
+      <!-- EINZELSHOOTING -->
+      <div class="type-section fade-in">
+        <aside class="type-section__sidebar">
+          <div class="type-section__bar"></div>
+          <h2 class="type-section__heading">Einzel&shy;shooting</h2>
+          <p class="type-section__body">F&#252;r Bewerbungsbilder, LinkedIn-Profilfotos oder einfach ein sch&#246;nes Portrait &#8212; professionell fotografiert in entspannter Atmosph&#228;re.</p>
+          <a href="kontakt.html" class="type-section__link" id="link-einzeln">Termin anfragen</a>
+        </aside>
+        <div class="type-gallery">
+          <a href="assets/images/einzeln/02.jpg"><img src="assets/images/einzeln/02.jpg" alt="Einzelshooting Portrait 1" loading="lazy"></a>
+          <a href="assets/images/einzeln/03.jpg"><img src="assets/images/einzeln/03.jpg" alt="Einzelshooting Portrait 2" loading="lazy"></a>
+          <a href="assets/images/einzeln/04.jpg"><img src="assets/images/einzeln/04.jpg" alt="Einzelshooting Portrait 3" loading="lazy"></a>
+        </div>
       </div>
+
+      <!-- PAARBILDER -->
+      <div class="type-section fade-in">
+        <aside class="type-section__sidebar">
+          <div class="type-section__bar"></div>
+          <h2 class="type-section__heading">Paar&shy;bilder</h2>
+          <p class="type-section__body">Ob Verlobung, Jubil&#228;um oder einfach so &#8212; Bilder, die Ihre Verbindung von ihrer sch&#246;nsten Seite zeigen. Nat&#252;rlich und voller Gef&#252;hl.</p>
+          <a href="kontakt.html" class="type-section__link" id="link-paar">Termin anfragen</a>
+        </aside>
+        <div class="type-gallery">
+          <a href="assets/images/paar/02.jpg"><img src="assets/images/paar/02.jpg" alt="Paarbilder 1" loading="lazy"></a>
+          <a href="assets/images/paar/03.jpg"><img src="assets/images/paar/03.jpg" alt="Paarbilder 2" loading="lazy"></a>
+          <a href="assets/images/paar/04.jpg"><img src="assets/images/paar/04.jpg" alt="Paarbilder 3" loading="lazy"></a>
+        </div>
+      </div>
+
+      <!-- BABY & FAMILIE -->
+      <div class="type-section fade-in">
+        <aside class="type-section__sidebar">
+          <div class="type-section__bar"></div>
+          <h2 class="type-section__heading">Baby &amp;<br>Familie</h2>
+          <p class="type-section__body">Kleine Momente, grosse Gef&#252;hle. Neugeborene, Kleinkinder und Familien-Portraits in nat&#252;rlicher Umgebung &#8212; warmherzig und authentisch.</p>
+          <a href="kontakt.html" class="type-section__link" id="link-familie">Termin anfragen</a>
+        </aside>
+        <div class="type-gallery">
+          <a href="assets/images/familie/02.jpg"><img src="assets/images/familie/02.jpg" alt="Baby und Familie 1" loading="lazy"></a>
+          <a href="assets/images/familie/03.jpg"><img src="assets/images/familie/03.jpg" alt="Baby und Familie 2" loading="lazy"></a>
+          <a href="assets/images/familie/04.jpg"><img src="assets/images/familie/04.jpg" alt="Baby und Familie 3" loading="lazy"></a>
+        </div>
+      </div>
+
+      <!-- TIERE -->
+      <div class="type-section fade-in">
+        <aside class="type-section__sidebar">
+          <div class="type-section__bar"></div>
+          <h2 class="type-section__heading">Tiere</h2>
+          <p class="type-section__body">Ihre vierbeinigen Freunde verdienen tolle Bilder. Mit Geduld, Gef&#252;hl und Liebe zum Tier entstehen nat&#252;rliche Aufnahmen, die den Charakter einfangen.</p>
+          <a href="kontakt.html" class="type-section__link" id="link-tiere">Termin anfragen</a>
+        </aside>
+        <div class="type-gallery type-gallery--wide">
+          <a href="assets/images/tiere/02.jpg"><img src="assets/images/tiere/02.jpg" alt="Tierfoto 1" loading="lazy"></a>
+          <a href="assets/images/tiere/02.jpg"><img src="assets/images/tiere/02.jpg" alt="Tierfoto 2" loading="lazy" style="filter:brightness(.96)"></a>
+          <div style="background:var(--color-surface);border-radius:3px;aspect-ratio:3/4;display:flex;align-items:center;justify-content:center">
+            <p style="font-family:var(--font-body);font-size:12px;color:var(--color-muted);text-align:center;padding:16px">Weitere Fotos<br>auf Anfrage</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 

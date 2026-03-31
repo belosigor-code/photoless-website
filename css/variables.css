@@ -2,10 +2,10 @@
   /* Palette – Direction 1: Weiches Licht */
   --color-bg:      #FAFAF8;
   --color-surface: #F0EDE8;
-  --color-primary: #3D3D3D;   /* Charcoal – CTAs, headings */
+  --color-primary: #1A1A1A;   /* Charcoal – CTAs, headings */
   --color-accent:  #1ABFCF;   /* Cyan – logo echo, thin bars, hover */
-  --color-text:    #4A4A4A;
-  --color-muted:   #9A9A92;
+  --color-text:    #2C2C2C;
+  --color-muted:   #6A6A6A;
   --color-border:  #E6E2DC;
 
   /* Typography */

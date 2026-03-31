@@ -928,3 +928,43 @@ main { padding-top: var(--nav-h); }
 @media (max-width: 640px) {
   .type-gallery { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ── CONTRAST OVERRIDES: body copy uses full --color-text ── */
+.hero__body,
+.services__body,
+.process__step-body,
+.type-card__body,
+.biz-card__body,
+.include-item__body,
+.type-section__body,
+.footer__tagline,
+.contact-detail__value {
+  color: var(--color-text);
+}
+
+/* Process numbers — pure decorative, near-invisible */
+.process__num {
+  color: rgba(26, 26, 26, 0.10);
+  font-weight: 300;
+}
+
+/* Step headings — noticeably bolder */
+.process__step-heading {
+  font-weight: 600 !important;
+  font-size: 26px;
+}
+
+/* Service headings bolder */
+.services__heading { font-weight: 600 !important; }
+.biz-card__heading { font-weight: 500; }
+.include-item__heading { font-weight: 500; }
+.type-section__heading { font-weight: 600 !important; }
+
+/* process section heading */
+.process__heading { font-weight: 500 !important; }
+
+/* Hero body — slightly larger and darker */
+.hero__body { font-size: 17px; }
+
+/* Page hero body */
+.page-hero__body { color: var(--color-text) !important; font-size: 17px; }

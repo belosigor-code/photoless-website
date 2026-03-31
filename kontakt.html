@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt &#8212; Photoless Fotostudio Regensdorf</title>
+  <meta name="description" content="Termin anfragen bei Photoless Fotostudio in Regensdorf. Hochzeit, Portrait, Business oder Schulklassen &#8212; wir melden uns innert 24 Stunden.">
+  <meta property="og:title" content="Kontakt &#8212; Photoless Fotostudio Regensdorf">
+  <meta property="og:description" content="Termin anfragen bei Photoless Fotostudio in Regensdorf. Hochzeit, Portrait, Business oder Schulklassen &#8212; wir melden uns innert 24 Stunden.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body><header class="nav" role="banner">
+  <a href="index.html" class="nav__logo" aria-label="Photoless &#8212; Zur Startseite">
+    <img src="assets/images/logo.png" alt="Photoless Fotostudio" width="140" height="30">
+  </a>
+  <nav aria-label="Hauptnavigation"><ul class="nav__links"><li><a href="hochzeit.html">Hochzeit</a></li><li><a href="fotoshooting.html">Fotoshooting</a></li><li><a href="firmen.html">Firmen</a></li><li><a href="schulen.html">Schulen</a></li></ul></nav>
+  <a href="kontakt.html" class="nav__cta" id="nav-cta">Anfragen</a>
+  <button class="nav__toggle" id="nav-toggle" aria-label="Men&#252; &#246;ffnen" aria-expanded="false" aria-controls="nav-mobile">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<nav class="nav__mobile" id="nav-mobile" aria-label="Mobile Navigation">
+  <a href="hochzeit.html">Hochzeit</a>
+  <a href="fotoshooting.html">Fotoshooting</a>
+  <a href="firmen.html">Firmen</a>
+  <a href="schulen.html">Schulen</a>
+  <a href="kontakt.html" class="btn--primary">Termin anfragen</a>
+</nav>
+<main id="main-content">
+  <section class="page-hero">
+    <div class="page-hero__inner">
+      <p class="page-hero__eyebrow fade-in">Kontakt</p>
+      <h1 class="page-hero__heading fade-in">Bereit f&#252;r<br><em>Ihr Shooting?</em></h1>
+      <p class="page-hero__body fade-in">Schreiben Sie uns und wir melden uns innerhalb von 24 Stunden &#8212; pers&#246;nlich und unkompliziert.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-grid">
+      <div>
+        <form action="#" method="post" novalidate id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Ihr vollst&#228;ndiger Name" autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail *</label>
+              <input type="email" id="email" name="email" required placeholder="ihre@email.ch" autocomplete="email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="+41 79 000 00 00" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="shooting">Art des Shootings *</label>
+              <select id="shooting" name="shooting" required>
+                <option value="" disabled selected>Bitte w&#228;hlen&#8230;</option>
+                <option value="hochzeit">Hochzeit</option>
+                <option value="einzelshooting">Einzelshooting</option>
+                <option value="paarbilder">Paarbilder</option>
+                <option value="familie">Baby &amp; Familie</option>
+                <option value="tiere">Tiere</option>
+                <option value="firmen">Firmenfotografie</option>
+                <option value="schulen">Schulklassen</option>
+                <option value="anderes">Anderes</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="datum">Wunschtermin</label>
+            <input type="text" id="datum" name="datum" placeholder="z.B. Juni 2025 oder flexibel">
+          </div>
+          <div class="form-group">
+            <label for="nachricht">Nachricht *</label>
+            <textarea id="nachricht" name="nachricht" required placeholder="Erz&#228;hlen Sie uns etwas &#252;ber Ihr Projekt&#8230;"></textarea>
+          </div>
+          <button type="submit" class="btn--primary" id="form-submit" style="margin-top:8px;border:none;cursor:pointer;font-size:12px;letter-spacing:.14em">Anfrage senden</button>
+        </form>
+      </div>
+      <aside class="contact-info">
+        <h2 class="contact-info__heading">Wir freuen uns<br>auf Ihre Nachricht.</h2>
+        <div class="contact-detail">
+          <p class="contact-detail__label">Studio</p>
+          <address class="contact-detail__value">Watterstrasse 101<br>8105 Regensdorf</address>
+        </div>
+        <div class="contact-detail">
+          <p class="contact-detail__label">&#214;ffnungszeiten</p>
+          <p class="contact-detail__value">Nach Vereinbarung</p>
+        </div>
+        <div class="contact-detail">
+          <p class="contact-detail__label">Antwortzeit</p>
+          <p class="contact-detail__value">Innerhalb von 24 Stunden</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <div>
+      <a href="index.html" class="footer__logo"><img src="assets/images/logo.png" alt="Photoless" width="120" height="26"></a>
+      <p class="footer__tagline">Ihr pers&#246;nliches Fotostudio<br>in Regensdorf, Z&#252;rich.</p>
+    </div>
+    <nav aria-label="Footer Navigation">
+      <p class="footer__heading">Leistungen</p>
+      <ul class="footer__links">
+        <li><a href="hochzeit.html">Hochzeit</a></li>
+        <li><a href="fotoshooting.html">Fotoshooting</a></li>
+        <li><a href="firmen.html">Firmen</a></li>
+        <li><a href="schulen.html">Schulen</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div>
+      <p class="footer__heading">Adresse</p>
+      <address class="footer__address">Photoless Fotostudio<br>Watterstrasse 101<br>8105 Regensdorf<br>Z&#252;rich, Schweiz</address>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">&copy; 2025 Photoless Fotostudio. Alle Rechte vorbehalten.</p>
+    <div class="footer__accent" aria-hidden="true"></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
